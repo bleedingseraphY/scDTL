@@ -31,16 +31,28 @@ scDTL
 |   ...
 └───data
 │   │   CCLE.csv
+│   │   CCLE_GSE112274_4000_sort.csv
+│   │   CCLE_GSE117872_4000_sort.csv
+│   │   CCLE_GSE134836_4000_sort.csv
 │   │   CCLE_GSE134838_4000_sort.csv
+│   │   CCLE_GSE134839_4000_sort.csv
 │   │   CCLE_GSExxxxxx_4000_sort.csv
 │   └───GSE112274
+│   │      GSE134838_4000.h5ad
 │   └───GSE117872
+│   │      GSE117872_4000.h5ad
 │   └───GSE134836
+│   │      GSE134836_4000.h5ad
 │   └───GSE134838
+│   │      GSE134838_4000.h5ad
 │   └───GSE134839
+│   │      GSE134839_4000.h5ad
 │   └───GSE134841
+│   │      GSE134841_4000.h5ad
 │   └───GSE140440
+│   │      GSE140440_4000.h5ad
 │   └───GSE149214
+│   │      GSE149214_4000.h5ad
 │   |   ...
 └───save
 |   └───logs
@@ -76,6 +88,7 @@ For example, run cbammodel.py with checkpoints to get the single-cell level impu
 
 ```
 source scDTL/bin/activate
+python scmodel.py --sc_data_name "GSE134838" --dimreduce "DAE" --bulk_h_dims "4096,2048" --imputor_h_dims "2048,4096" --dropout 0.0 --lr 0.01 --checkpoint "data_GSE134838_4000_bottle_2048_edim_4096,2048_idim_2048,4096_model_DAE_DaNN.pkl"
 python cbammodel.py --sc_data "GSE134838" --dimreduce "DAE" --con_kernel "16,32,64,128" --dropout 0.0 --lr 0.01 --checkpoint "data_GSE134838_con_kernel_16,32,64,128_dropRate_0.0_model_DAE.pkl"
 ```
 
@@ -99,7 +112,7 @@ scDTL
 │   └───result
 │   |    │
 │   |    └───GSE134838
-│   │        cbam_impute_all_leiden_GSE134838.csv   
+│   │    │      cbam_impute_zero_leiden_GSE134838.csv   
 │   │    ...   
 |   └───models
 │   │    save/bulk_encoder
