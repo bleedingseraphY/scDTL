@@ -65,6 +65,8 @@ scDTL
 │   │    ...   
 ```
 
+### Data discription
+CCLE.csv is bulk level cell data with 19193 genes. CCLE_GSExxxxxx_4000_sort.csv is bulk level cell data which have 4000 common genes with single cell data named GSExxxxxx, and then we sequenced it so that its genetic order matched that of the single cell dataset with samed name. GSExxxxxx_4000.h5ad is single-cell data with 4000 genes. For example, CCLE_GSE134838_4000_sort.csv and GSE134838_4000.h5ad have the samed 4000 genes.
 ### Directory contents
 Folders in our package will store the corresponding contents:
 
