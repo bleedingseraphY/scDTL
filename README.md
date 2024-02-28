@@ -84,7 +84,7 @@ An example can be:
 
 Usage:
 For resuming training, you can use the --checkpoint option of bulkmodel.py, scmodel.py and cbammodel.py.
-For example, run cbammodel.py with checkpoints to get the single-cell level impute results:
+For example, run scmodel.py and cbammodel.py with checkpoints to get the single-cell level impute results:
 
 ```
 source scDTL/bin/activate
