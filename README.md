@@ -14,7 +14,9 @@ cd scDTL
 ```
 ## Requirements
 python = 3.9
+
 pytorch = 1.12.0
+
 scanpy = 1.9.6
 ## Data Preparation
 ### Data download
