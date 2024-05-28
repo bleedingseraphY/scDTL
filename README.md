@@ -12,7 +12,10 @@ git clone https://github.com/bleedingseraphY/scDTL.git
 # Go into the directory
 cd scDTL
 ```
-
+## Requirements
+python = 3.9
+pytorch = 1.12.0
+scanpy = 1.9.6
 ## Data Preparation
 ### Data download
 After setting up the home directory, you need to download other data required for the run. Please create and download the zip format dataset from the website link inside:
