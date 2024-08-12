@@ -91,7 +91,7 @@ def cbam_indicator(X_eval_dataloader,drop_data_mmscaler, groundTruth_mmscaler,un
     drop_data = drop_data_tensors.detach().cpu().numpy().astype(float)
     groundTruth = groundTruth_tensor.detach().cpu().numpy().astype(float)
     #find no zero value of selected_data_single
-    #反归一化
+    #
     drop_data = drop_data_mmscaler.inverse_transform(drop_data.T).T
 
     impute_all = predictions.copy()
